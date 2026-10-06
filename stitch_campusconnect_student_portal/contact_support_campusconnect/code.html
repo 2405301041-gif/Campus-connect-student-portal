@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CampusConnect - Collegiate Student Portal</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#131b2e","background":"#faf8ff","secondary-fixed-dim":"#89ceff","surface-tint":"#494bd6","secondary-container":"#39b8fd","surface-container-high":"#e2e7ff","on-background":"#131b2e","surface-variant":"#dae2fd","on-tertiary-container":"#fffbff","on-error-container":"#93000a","inverse-primary":"#c0c1ff","on-primary-fixed":"#07006c","on-tertiary-fixed-variant":"#5a00c6","tertiary-fixed":"#eaddff","primary-container":"#6063ee","surface":"#faf8ff","on-secondary-fixed":"#001e2f","on-error":"#ffffff","on-surface-variant":"#464554","primary-fixed":"#e1e0ff","surface-container-lowest":"#ffffff","on-primary":"#ffffff","surface-dim":"#d2d9f4","tertiary":"#712ae2","outline-variant":"#c7c4d7","on-tertiary":"#ffffff","on-secondary-container":"#004666","primary":"#4648d4","secondary":"#006591","primary-fixed-dim":"#c0c1ff","error":"#ba1a1a","inverse-on-surface":"#eef0ff","surface-container-highest":"#dae2fd","on-secondary":"#ffffff","error-container":"#ffdad6","secondary-fixed":"#c9e6ff","outline":"#767586","tertiary-fixed-dim":"#d2bbff","surface-bright":"#faf8ff","inverse-surface":"#283044","on-primary-fixed-variant":"#2f2ebe","surface-container":"#eaedff","on-primary-container":"#fffbff","tertiary-container":"#8a4cfc","surface-container-low":"#f2f3ff","on-tertiary-fixed":"#25005a","on-secondary-fixed-variant":"#004c6e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter":"1.5rem","space-sm":"0.5rem","margin":"2rem","space-md":"1rem","space-xl":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Plus Jakarta Sans"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-gutter"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="CampusConnect Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XiEaCBvYJvOjsHwpe62CgAbUUboI550HiyGVyoT1FBN3I42S_qZ47ZwPQPMP2TfNPIvNdGfuP-3ggHVcp0Smig8qZdu_H2qR8Q_TzFzVz4joE8shtptTvcizoeWIbFNKNc70IQxTbkcVPkgNX9oBWZuNM34_7zCmsK01KF_7I5p5S8v0pMD1awWvWJsirLg8eEMhZPNGnui3VmtUo1Fih_wK8vAeHPWZz39_bqNLzNii8hIPkbQbCr53MU"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface group-hover:text-primary transition-colors">CampusConnect</span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="events" href="#">Events</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="clubs-societies" href="#">Clubs &amp; Societies</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="announcements" href="#">Announcements</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="contact" href="#">Contact</a></nav></div><div class="flex items-center gap-space-sm"><button class="hidden md:flex items-center justify-between w-60 h-10 px-space-sm rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)]" type="button"><span class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px]">search</span>Search events, clubs...</span><kbd class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">⌘K</kbd></button><button aria-label="Notifications" class="relative p-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 flex items-center justify-center w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] leading-none font-bold">3</span></button><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-xl bg-gradient-to-r from-primary to-tertiary text-on-primary font-label-md text-label-md font-bold shadow-[0_4px_16px_rgba(113,42,226,0.25)] hover:shadow-[0_6px_20px_rgba(70,72,212,0.35)] transition-all hover:-translate-y-0.5" data-path="host-event" href="#">Host Event</a><div class="flex items-center gap-space-sm pl-space-xs py-space-xs pr-space-sm rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoz_Wg-EegIvGtiaYNP5mj2avmgSQqdajVBsxkRWOZp_zxy5fhtWJUjoPMNu53Opz7eLoknwIalqxWT_12JLvzk1VwajDt7-LTqiJHwPj9qtInbLDwjmFHXOWnY_nAJJP64SEOfLHRoU0sgukZ8yvSoWyfASLzKg0F73Skq9M414cw7jK09TiTx5-jw5v5WGI7ST44NNs_OMN95vg9sf7TPvpfth7VOIrchiSO8EL9TUbmvdpu6luTFw"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container ring-2 ring-surface"></span></div><div class="hidden lg:flex flex-col text-left leading-tight"><span class="font-label-md text-label-md font-bold text-on-surface">Maya Lin</span><span class="font-body-sm text-[11px] text-on-surface-variant">CS '26</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<section class="relative overflow-hidden pt-space-lg pb-space-xl px-margin">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            24/7 Student Assistance Network
+          </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-xs">
+            Get in Touch &amp; Student Support Center
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Have questions about event registrations, room bookings, or club authorizations? We are here to help you navigate campus life seamlessly.
+          </p>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-sm rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">Systems Operational</span>
+</div>
+<span class="text-outline font-body-sm text-body-sm">|</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span>Avg Response: <strong>8 mins</strong></span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-xl">
+<div class="group relative p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">account_balance</span>
+</div>
+<span class="inline-block font-label-sm text-label-sm uppercase text-primary font-bold tracking-wider mb-1">Academic &amp; Life</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Student Affairs Helpdesk</h3>
+<div class="space-y-space-xs font-body-md text-body-md text-on-surface-variant mb-space-md">
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline flex-shrink-0 mt-0.5">location_on</span>
+<span>Student Center, Room 104</span>
+</p>
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline flex-shrink-0 mt-0.5">schedule</span>
+<span>Mon-Fri 8:30 AM – 5:00 PM</span>
+</p>
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline flex-shrink-0 mt-0.5">mail</span>
+<a class="text-primary hover:underline truncate" href="mailto:studentaffairs@campusconnect.edu">studentaffairs@campusconnect.edu</a>
+</p>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold group-hover:gap-2 transition-all" href="mailto:studentaffairs@campusconnect.edu">
+              Contact Desk <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group relative p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-error-container flex items-center justify-center text-error mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">local_police</span>
+</div>
+<span class="inline-block font-label-sm text-label-sm uppercase text-error font-bold tracking-wider mb-1">Emergency Dispatch</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Campus Security</h3>
+<div class="space-y-space-xs font-body-md text-body-md text-on-surface-variant mb-space-md">
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-error flex-shrink-0 mt-0.5">emergency</span>
+<span class="font-bold text-on-surface">24/7 Hotline: (555) 019-2831</span>
+</p>
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline flex-shrink-0 mt-0.5">apartment</span>
+<span>Security Control Room B1 (Central Yard)</span>
+</p>
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline flex-shrink-0 mt-0.5">verified_user</span>
+<span>Campus Escort Service Available</span>
+</p>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-error font-bold group-hover:gap-2 transition-all" href="tel:5550192831">
+              Call Hotline Now <span class="material-symbols-outlined text-[16px]">phone_in_talk</span>
+</a>
+</div>
+</div>
+<div class="group relative p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<span class="inline-block font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider mb-1">Digital Infrastructure</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">IT &amp; Portal Tech Support</h3>
+<div class="space-y-space-xs font-body-md text-body-md text-on-surface-variant mb-space-md">
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline flex-shrink-0 mt-0.5">mail</span>
+<a class="text-primary hover:underline truncate" href="mailto:support@campusconnect.edu">support@campusconnect.edu</a>
+</p>
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline flex-shrink-0 mt-0.5">chat</span>
+<span>Live Chat Response: <strong>&lt; 10 mins</strong></span>
+</p>
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline flex-shrink-0 mt-0.5">dns</span>
+<span>SSO, WiFi &amp; RFID Portal Sync</span>
+</p>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-bold group-hover:gap-2 transition-all" href="#message-form-container">
+              Start Live Ticket <span class="material-symbols-outlined text-[16px]">bolt</span>
+</a>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start mb-space-xl">
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg md:p-space-xl rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)]" id="message-form-container">
+<div class="flex items-center justify-between gap-space-md mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Fast-Track Routing</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Direct Inquiry Dispatch</h2>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Ticket Queue Active
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+            Submit your inquiry directly to the university administration, club council, or portal engineers. Average triage time is under 15 minutes during campus operational hours.
+          </p>
+<div class="hidden mb-space-md p-space-md rounded-xl bg-surface-container-high text-on-surface transition-all" id="confirmation-banner">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-primary flex-shrink-0">check_circle</span>
+<div class="flex-1 min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface">Inquiry Ticket #CC-9428 Created!</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1" id="confirmation-preview-text">
+                  A receipt confirmation and tracking reference have been sent to your university email address.
+                </p>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="document.getElementById('confirmation-banner').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<form class="space-y-space-md" id="contact-inquiry-form" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="fullName">Full Name *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">person</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="fullName" placeholder="Maya Lin" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="studentId">Student / Faculty ID *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">badge</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="studentId" placeholder="STU-2026-8812" required="" type="text"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="uniEmail">University Email *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">alternate_email</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="uniEmail" placeholder="mlin@campusconnect.edu" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="deptProgram">Department / Program</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">school</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="deptProgram" placeholder="Computer Science &amp; Eng" type="text"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="inquiryCategory">Category Priority *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">category</span>
+<select class="w-full h-11 pl-10 pr-8 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all appearance-none cursor-pointer" id="inquiryCategory" required="">
+<option value="Event Issue">Event Issue &amp; Ticketing QR</option>
+<option value="Club Registration">Club Registration &amp; Charter Approval</option>
+<option value="Portal Bug">Portal Technical Bug &amp; Authentication</option>
+<option value="General Inquiry">General Inquiry &amp; Academic Room Reservation</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="subjectLine">Subject *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">title</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="subjectLine" placeholder="e.g., Unable to generate QR code for TechFest" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="messageBody">Message &amp; Case Details *</label>
+<textarea class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="messageBody" placeholder="Provide specific timestamps, venue codes, or error strings if applicable..." required="" rows="4"></textarea>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Attachment (Screenshot or Approval Doc)</label>
+<label class="flex flex-col sm:flex-row items-center justify-between gap-3 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors" for="fileUpload">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">upload_file</span>
+</div>
+<div class="text-left">
+<span class="block font-body-sm text-body-sm text-on-surface font-semibold" id="fileNameLabel">Attach proof or error logs</span>
+<span class="block text-[11px] text-on-surface-variant">PNG, JPG, PDF up to 10MB</span>
+</div>
+</div>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold">Browse</span>
+<input class="hidden" id="fileUpload" onchange="updateFileName(this)" type="file"/>
+</label>
+</div>
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-2 text-on-surface-variant text-[12px] font-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+                Protected by Student Data Privacy Policy
+              </div>
+<button class="w-full sm:w-auto h-12 px-space-xl rounded-xl bg-gradient-to-r from-primary to-tertiary text-on-primary font-label-md text-label-md font-bold shadow-[0_4px_16px_rgba(70,72,212,0.3)] hover:shadow-[0_6px_22px_rgba(113,42,226,0.4)] transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2" type="submit">
+<span>Submit Inquiry</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</form>
+</div>
+<div class="lg:col-span-5 space-y-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Campus Spatial Directory</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Wayfinding</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Interactive Navigation &amp; Gates</h3>
+<div class="w-full h-56 rounded-xl bg-cover bg-center relative overflow-hidden shadow-inner flex items-end p-space-sm mb-space-md" data-alt="Aerial campus satellite view of a collegiate university quad with modern brick buildings, tree-lined walking paths, manicured lawns, and architectural glass pavilions bathed in bright natural sunlight." data-location="University Student Union, Central Campus" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')">
+<div class="w-full bg-surface/90 backdrop-blur-md p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0">place</span>
+<div class="truncate">
+<p class="font-label-md text-label-md text-on-surface truncate font-bold">Student Union Building (SUB)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Sector 4 • Plaza Quadrangle</p>
+</div>
+</div>
+<a class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold flex-shrink-0" href="#gates">Navigate</a>
+</div>
+</div>
+<div class="space-y-space-xs" id="gates">
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-xs">NG</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Campus North Gate</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Transit Hub &amp; Metro Line 2 Entry</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">4 min walk</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">SG</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Campus South Gate</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Main Parking Deck &amp; Athletics Oval</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">7 min walk</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-xs">UB</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Student Union Building</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Helpdesk 104, Ballroom &amp; Hub</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Immediate</span>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-br from-surface-container to-surface-container-high p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+<span class="font-title-md text-title-md font-bold">Instant Dean Office Triage</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Need immediate authorization signatures for society events or budget allocations? Schedule an in-person flash slot.
+            </p>
+<div class="flex items-center justify-between pt-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface" data-alt="Portrait headshot of university academic dean with glasses smiling warmly in university office with academic bookshelf backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSnOSapQgSrpaFttKfJp0ikyB5sU0KaYK3oXWjxRAZJVo7j-wkHaHVwtV16EKQjGcJchYDfJqByAMeaAN996zosk60nqiqH6ojXPlqDon-zu5tCSktqjP8c7zDRbx0SSRBlWzlatJdurXp6gLJ2l-Il50GtmtrQXTyRpj_8Mtx30OetULyMyRUAnyZnVchTA9h3f1tiorG0ECCbycwYu5Uhd2QjBtc17U1cEAU1-2ABjeaW12JpqnmSw"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface" data-alt="Portrait of collegiate student counselor holding a tablet in bright modern educational lounge with blurred architectural windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7dlvBSLmI2TVv6aCFL7xV4aAi3M_5Nf0PaAVhJZlKy7B1noawN10TvozDKsYpxVjyTjpcTDFllHHw0wsSOFlYETbWvlqcdDe76p-Sb2dtG_lB4hLHEyD2JbBu0LHkHA62y-njyVybilKveO1EEoCquLSk1DUwz3tX72e1waGJjqaqAZ2zyeKcLVE9ypk23XZhW0vaoWAfkf9-cL1RDTgwKzDDlwgecYU2YAeY6I7nNKtbHr-Ge_1juw"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface" data-alt="Portrait of campus safety administrator smiling in professional blazer against university campus stone courtyard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSmaIgVU2STv3a8_dGmuUqrkofMSlV8Hg849Kpo7v0dCjuHnwb2xFxJVuNkFqE7VlcIL57t1OIEenMLsNJ-ISRsz2Avvb4gEWHQZOdzvV0kVKyp1x9JKUarbirGpRQh-lLgz3PLRQ7w4qej_vn8y_aiKrTkGUPbM4OnyATgcDQtHEvXppKwlbb_HIoVYHFclPHy8M8ie25Bzk8OrhCdjzjU3bhUEEddZ0rNXW41kjWwyvrTmYEQBfnmw"/>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-on-surface text-background font-label-md text-label-md font-bold hover:bg-primary transition-colors" type="button">
+                Book Walk-In
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)]">
+<div class="max-w-2xl mb-space-lg">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Quick Resolution Center</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Find immediate answers regarding digital ticketing, event admittance policies, club registration credentials, and graduation credits.
+          </p>
+</div>
+<div class="space-y-space-sm" id="faq-accordion-group">
+<div class="faq-item rounded-xl bg-surface-container-low transition-all">
+<button class="w-full p-space-md flex items-center justify-between text-left gap-space-md" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-on-surface font-semibold">How do I get my digital ticket QR code?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 text-[20px] faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Once you RSVP or purchase entry to any approved campus event via the Events tab, your unique cryptographic QR pass generates immediately inside your <strong>Dashboard &gt; My Passes</strong>. You will also receive an authenticated copy delivered straight to your verified student inbox with Google Wallet and Apple Wallet pass links.
+            </div>
+</div>
+<div class="faq-item rounded-xl bg-surface-container-low transition-all">
+<button class="w-full p-space-md flex items-center justify-between text-left gap-space-md" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Can non-students attend cultural fests and hackathons?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 text-[20px] faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Open registration policy depends on the hosting society. Large-scale invitationals such as the Annual Hackathon and Spring Cultural Fest allow registered non-collegiate guests, provided they submit government photo identification during checkout. Inter-collegiate attendees must enter their active university email for automatic verification.
+            </div>
+</div>
+<div class="faq-item rounded-xl bg-surface-container-low transition-all">
+<button class="w-full p-space-md flex items-center justify-between text-left gap-space-md" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-on-surface font-semibold">What are the requirements to start a new recognized college club?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 text-[20px] faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Chartering a collegiate organization requires: (1) A core executive team of at least 4 enrolled students in good academic standing, (2) One full-time faculty advisor confirmation letter, (3) A minimum of 15 student co-signers, and (4) Submission of an official constitution using the Student Affairs Club Charter template. Approvals take 5-7 business days.
+            </div>
+</div>
+<div class="faq-item rounded-xl bg-surface-container-low transition-all">
+<button class="w-full p-space-md flex items-center justify-between text-left gap-space-md" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-on-surface font-semibold">How are extracurricular activity points credited toward graduation?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 text-[20px] faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              All official events tagged with <em>Co-Curricular Point Recognition</em> sync attendance stamps through the CampusConnect scanner kiosks at check-in. These points reflect on your official Degree Audit transcript under Tier-2 Extracurricular Competencies within 48 hours of event completion.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script>
+    function toggleFaq(button) {
+      const parent = button.parentElement;
+      const content = parent.querySelector('.faq-content');
+      const icon = button.querySelector('.faq-icon');
+      const isHidden = content.classList.contains('hidden');
+
+      document.querySelectorAll('#faq-accordion-group .faq-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faq-accordion-group .faq-icon').forEach(ic => ic.style.transform = 'rotate(0deg)');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    function updateFileName(input) {
+      const label = document.getElementById('fileNameLabel');
+      if (input.files && input.files[0]) {
+        label.innerText = input.files[0].name;
+      }
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const banner = document.getElementById('confirmation-banner');
+      const previewText = document.getElementById('confirmation-preview-text');
+      const name = document.getElementById('fullName').value;
+      const email = document.getElementById('uniEmail').value;
+      const category = document.getElementById('inquiryCategory').value;
+      
+      previewText.innerHTML = 'Thank you, <strong>' + name + '</strong>. Your inquiry under <strong>' + category + '</strong> has been dispatched. A confirmation copy has been sent to <strong>' + email + '</strong>.';
+      banner.classList.remove('hidden');
+      banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      document.getElementById('contact-inquiry-form').reset();
+      document.getElementById('fileNameLabel').innerText = 'Attach proof or error logs';
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-md"><img alt="CampusConnect Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XiEaCBvYJvOjsHwpe62CgAbUUboI550HiyGVyoT1FBN3I42S_qZ47ZwPQPMP2TfNPIvNdGfuP-3ggHVcp0Smig8qZdu_H2qR8Q_TzFzVz4joE8shtptTvcizoeWIbFNKNc70IQxTbkcVPkgNX9oBWZuNM34_7zCmsK01KF_7I5p5S8v0pMD1awWvWJsirLg8eEMhZPNGnui3VmtUo1Fih_wK8vAeHPWZz39_bqNLzNii8hIPkbQbCr53MU"/><span class="font-headline-sm text-headline-sm text-on-surface">CampusConnect</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">Empowering student life and collegiate engagement across campus through seamless event discovery, student-led organizations, and academic unity.</p><div class="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Campus Network" class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">hub</span></a><a aria-label="Community Feed" class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">forum</span></a><a aria-label="University Directory" class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">school</span></a></div></div><div><h3 class="font-title-md text-title-md text-on-surface mb-space-md">Quick Links</h3><ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="events" href="#">Upcoming Hackathons</a></li><li><a class="hover:text-primary transition-colors" data-path="events" href="#">Cultural Fest 2025</a></li><li><a class="hover:text-primary transition-colors" data-path="clubs-societies" href="#">Club Directory</a></li><li><a class="hover:text-primary transition-colors" data-path="campus-map" href="#">Campus Map</a></li></ul></div><div><h3 class="font-title-md text-title-md text-on-surface mb-space-md">Student Services</h3><ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="about" href="#">Event Guidelines</a></li><li><a class="hover:text-primary transition-colors" data-path="room-booking" href="#">Room Booking</a></li><li><a class="hover:text-primary transition-colors" data-path="student-council" href="#">Student Council</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="#">Helpdesk &amp; FAQs</a></li></ul></div><div><h3 class="font-title-md text-title-md text-on-surface mb-space-md">Campus Emergency &amp; Contact</h3><div class="space-y-space-sm font-body-md text-body-md text-on-surface-variant mb-space-md"><div><span class="block font-label-md text-label-md text-on-surface font-semibold">Security Hotline:</span><span>(555) 019-2834 (24/7)</span></div><div><span class="block font-label-md text-label-md text-on-surface font-semibold">Dean of Student Affairs:</span><span>South Tower, Hall B • ext. 4410</span></div><div><span class="block font-label-md text-label-md text-on-surface font-semibold">Email:</span><a class="hover:text-primary transition-colors" href="mailto:connect@campusconnect.edu">connect@campusconnect.edu</a></div></div><div><form class="flex items-center gap-space-xs" onsubmit="event.preventDefault()"><input class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Student email" type="email"/><button class="h-10 px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-colors" type="submit">Join</button></form></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 CampusConnect Portal. Affiliated with University Division of Student Affairs.</p><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="about" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="about" href="#">Student Code of Conduct</a><a class="hover:text-primary transition-colors" data-path="contact" href="#">Accessibility</a></div></div></div></footer></body></html>

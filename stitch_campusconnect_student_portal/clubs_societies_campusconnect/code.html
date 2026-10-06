@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CampusConnect - Collegiate Student Portal</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#131b2e","background":"#faf8ff","secondary-fixed-dim":"#89ceff","surface-tint":"#494bd6","secondary-container":"#39b8fd","surface-container-high":"#e2e7ff","on-background":"#131b2e","surface-variant":"#dae2fd","on-tertiary-container":"#fffbff","on-error-container":"#93000a","inverse-primary":"#c0c1ff","on-primary-fixed":"#07006c","on-tertiary-fixed-variant":"#5a00c6","tertiary-fixed":"#eaddff","primary-container":"#6063ee","surface":"#faf8ff","on-secondary-fixed":"#001e2f","on-error":"#ffffff","on-surface-variant":"#464554","primary-fixed":"#e1e0ff","surface-container-lowest":"#ffffff","on-primary":"#ffffff","surface-dim":"#d2d9f4","tertiary":"#712ae2","outline-variant":"#c7c4d7","on-tertiary":"#ffffff","on-secondary-container":"#004666","primary":"#4648d4","secondary":"#006591","primary-fixed-dim":"#c0c1ff","error":"#ba1a1a","inverse-on-surface":"#eef0ff","surface-container-highest":"#dae2fd","on-secondary":"#ffffff","error-container":"#ffdad6","secondary-fixed":"#c9e6ff","outline":"#767586","tertiary-fixed-dim":"#d2bbff","surface-bright":"#faf8ff","inverse-surface":"#283044","on-primary-fixed-variant":"#2f2ebe","surface-container":"#eaedff","on-primary-container":"#fffbff","tertiary-container":"#8a4cfc","surface-container-low":"#f2f3ff","on-tertiary-fixed":"#25005a","on-secondary-fixed-variant":"#004c6e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter":"1.5rem","space-sm":"0.5rem","margin":"2rem","space-md":"1rem","space-xl":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Plus Jakarta Sans"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-gutter"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="CampusConnect Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XiEaCBvYJvOjsHwpe62CgAbUUboI550HiyGVyoT1FBN3I42S_qZ47ZwPQPMP2TfNPIvNdGfuP-3ggHVcp0Smig8qZdu_H2qR8Q_TzFzVz4joE8shtptTvcizoeWIbFNKNc70IQxTbkcVPkgNX9oBWZuNM34_7zCmsK01KF_7I5p5S8v0pMD1awWvWJsirLg8eEMhZPNGnui3VmtUo1Fih_wK8vAeHPWZz39_bqNLzNii8hIPkbQbCr53MU"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface group-hover:text-primary transition-colors">CampusConnect</span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="events" href="#">Events</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="clubs-societies" href="#">Clubs &amp; Societies</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="announcements" href="#">Announcements</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="flex items-center gap-space-sm"><button class="hidden md:flex items-center justify-between w-60 h-10 px-space-sm rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)]" type="button"><span class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px]">search</span>Search events, clubs...</span><kbd class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">⌘K</kbd></button><button aria-label="Notifications" class="relative p-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 flex items-center justify-center w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] leading-none font-bold">3</span></button><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-xl bg-gradient-to-r from-primary to-tertiary text-on-primary font-label-md text-label-md font-bold shadow-[0_4px_16px_rgba(113,42,226,0.25)] hover:shadow-[0_6px_20px_rgba(70,72,212,0.35)] transition-all hover:-translate-y-0.5" data-path="host-event" href="#">Host Event</a><div class="flex items-center gap-space-sm pl-space-xs py-space-xs pr-space-sm rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoz_Wg-EegIvGtiaYNP5mj2avmgSQqdajVBsxkRWOZp_zxy5fhtWJUjoPMNu53Opz7eLoknwIalqxWT_12JLvzk1VwajDt7-LTqiJHwPj9qtInbLDwjmFHXOWnY_nAJJP64SEOfLHRoU0sgukZ8yvSoWyfASLzKg0F73Skq9M414cw7jK09TiTx5-jw5v5WGI7ST44NNs_OMN95vg9sf7TPvpfth7VOIrchiSO8EL9TUbmvdpu6luTFw"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container ring-2 ring-surface"></span></div><div class="hidden lg:flex flex-col text-left leading-tight"><span class="font-label-md text-label-md font-bold text-on-surface">Maya Lin</span><span class="font-body-sm text-[11px] text-on-surface-variant">CS '26</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-xl overflow-hidden">
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-fixed rounded-full filter blur-3xl opacity-40 pointer-events-none"></div>
+<div class="absolute top-1/2 -left-28 w-80 h-80 bg-secondary-fixed rounded-full filter blur-3xl opacity-35 pointer-events-none"></div>
+<div class="relative flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Official University Organizations
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Student Clubs, Chapters &amp; Societies
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Explore student-led innovation, artistic expression, athletic rigor, and social leadership across 60+ active collegiate chapters.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center px-space-md py-space-sm bg-surface-container rounded-xl shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold mr-2">64</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Registered<br/>Societies</span>
+</div>
+<div class="flex items-center px-space-md py-space-sm bg-surface-container rounded-xl shadow-sm">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold mr-2">4.8k</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Active<br/>Members</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm mb-space-xl space-y-space-md">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[22px]">search</span>
+<input class="w-full h-12 pl-12 pr-28 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="club-search-input" placeholder="Search by society name, technology, domain or lead organizer..." type="text"/>
+<div class="absolute right-3 flex items-center gap-1">
+<kbd class="hidden sm:inline-block px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">ESC</kbd>
+</div>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none" id="filter-container">
+<button class="filter-btn active-filter whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm hover:opacity-95" data-filter="all">
+          All (64)
+        </button>
+<button class="filter-btn whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" data-filter="technical">
+          Technical &amp; Coding
+        </button>
+<button class="filter-btn whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" data-filter="cultural">
+          Cultural &amp; Arts
+        </button>
+<button class="filter-btn whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" data-filter="literary">
+          Literary &amp; Debate
+        </button>
+<button class="filter-btn whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" data-filter="sports">
+          Sports &amp; Fitness
+        </button>
+<button class="filter-btn whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" data-filter="social">
+          Social Service &amp; NGO
+        </button>
+<button class="filter-btn whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" data-filter="entrepreneurship">
+          Entrepreneurship
+        </button>
+</div>
+</div>
+<div class="relative rounded-2xl bg-gradient-to-br from-primary via-primary-container to-tertiary text-on-primary p-space-lg md:p-space-xl shadow-xl overflow-hidden mb-space-xl">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 space-y-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-on-primary/15 backdrop-blur-md font-label-sm text-label-sm uppercase tracking-wide text-on-primary font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">military_tech</span>
+            Featured Society of the Month
+          </div>
+<h2 class="font-headline-lg text-headline-lg font-extrabold tracking-tight">
+            Google Developer Student Club (GDSC) - Campus Chapter
+          </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed max-w-2xl">
+            Winner of the Global Solutions Challenge 2024. Fostering peer-to-peer developer culture, open-source contribution, and production AI workshops on campus.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-on-primary/90 font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5 bg-black/15 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+<span>Next Orientation: <strong>Thursday 5:00 PM</strong></span>
+</div>
+<div class="flex items-center gap-1.5 bg-black/15 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>Turing Hall &amp; Google Meet</span>
+</div>
+<div class="flex items-center gap-1.5 bg-black/15 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+<span>580+ Campus Fellows</span>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-sm">
+<button class="px-space-lg py-3 rounded-xl bg-surface text-primary font-label-md text-label-md font-bold hover:bg-surface-container hover:shadow-lg transition-all flex items-center gap-2" id="featured-join-btn">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+              Join Society
+            </button>
+<button class="px-space-lg py-3 rounded-xl bg-on-primary/15 text-on-primary hover:bg-on-primary/25 font-label-md text-label-md font-bold backdrop-blur-md transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+              View Chapter Lead
+            </button>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-center justify-center">
+<div class="relative w-full max-w-xs rounded-2xl bg-surface-container-lowest/10 backdrop-blur-xl p-space-md text-on-primary space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface flex items-center justify-center text-primary font-extrabold text-headline-sm shadow-md">
+                G
+              </div>
+<div>
+<div class="font-title-md text-title-md font-bold">Chapter Council</div>
+<div class="font-body-sm text-body-sm text-secondary-fixed">Lead: Sarah Chen (Senior CS)</div>
+</div>
+</div>
+<div class="h-2 w-full bg-black/20 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-[88%] rounded-full"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-primary-fixed">
+<span>Semester Capacity</span>
+<span>88% Full</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Recognized Collegiate Chapters</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Active recruitment and weekly calendar events</p>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Showing 6 Chapters</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-xl" id="societies-grid">
+<div class="society-card group flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="technical">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary font-headline-sm text-headline-sm font-extrabold shadow-sm">
+              ACM
+            </div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold uppercase tracking-wide">
+              Computer Science
+            </span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">
+              ACM Student Chapter
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Collegiate chapter focused on competitive algorithmic coding, systems design, and annual university hackathons.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Weekly LeetCode Nights</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Annual Hackathon</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">person</span>President</span>
+<span class="font-semibold text-on-surface">Alex Rivera ('25)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span>Next Sync</span>
+<span class="font-semibold text-on-surface">Wed, 6:30 PM • Lab 4</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-[18px]">group</span>
+<span class="font-bold text-on-surface">420</span> members
+          </div>
+<div class="flex items-center gap-2">
+<button class="join-btn px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm transition-all" data-name="ACM Student Chapter">
+              Join Club
+            </button>
+<a aria-label="Portal Link" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="society-card group flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="cultural">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary font-headline-sm text-headline-sm font-extrabold shadow-sm">
+              CMS
+            </div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold uppercase tracking-wide">
+              Cultural &amp; Arts
+            </span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-tertiary transition-colors">
+              The Crescendo Music Society
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Multi-genre musical collective offering campus acoustic nights, professional audio suite access, and live orchestra jams.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Band Jam Sessions</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Auditions Open</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">person</span>President</span>
+<span class="font-semibold text-on-surface">Elena Rostova ('26)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span>Next Sync</span>
+<span class="font-semibold text-on-surface">Fri, 4:00 PM • Aud. Studio</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-tertiary text-[18px]">group</span>
+<span class="font-bold text-on-surface">310</span> members
+          </div>
+<div class="flex items-center gap-2">
+<button class="join-btn px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm transition-all" data-name="The Crescendo Music Society">
+              Join Club
+            </button>
+<a aria-label="Portal Link" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="society-card group flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="technical">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary font-headline-sm text-headline-sm font-extrabold shadow-sm">
+              ARK
+            </div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wide">
+              Engineering
+            </span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-secondary transition-colors">
+              AeroKinetics Rocketry Club
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Pioneering collegiate avionics, solid fuel telemetry, drone racing, and preparation for the NASA Rover Challenge.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">High-Power Rocketry</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Drone Arena</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">person</span>President</span>
+<span class="font-semibold text-on-surface">Devon Vance ('25)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span>Next Sync</span>
+<span class="font-semibold text-on-surface">Sat, 10:00 AM • Hangar 2</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span class="font-bold text-on-surface">185</span> members
+          </div>
+<div class="flex items-center gap-2">
+<button class="join-btn px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm transition-all" data-name="AeroKinetics Rocketry Club">
+              Join Club
+            </button>
+<a aria-label="Portal Link" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="society-card group flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="literary">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-on-surface font-headline-sm text-headline-sm font-extrabold shadow-sm">
+              MUN
+            </div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wide">
+              Literary &amp; Debate
+            </span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">
+              Debate &amp; Model United Nations
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Championship parliamentary debaters and international policy delegates representing the campus worldwide.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Parliamentary Debate</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Harvard MUN</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">person</span>President</span>
+<span class="font-semibold text-on-surface">Zainab Al-Mansoor ('25)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span>Next Sync</span>
+<span class="font-semibold text-on-surface">Tue, 5:30 PM • Senate Hall</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-[18px]">group</span>
+<span class="font-bold text-on-surface">230</span> members
+          </div>
+<div class="flex items-center gap-2">
+<button class="join-btn px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm transition-all" data-name="Debate &amp; Model UN">
+              Join Club
+            </button>
+<a aria-label="Portal Link" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="society-card group flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="social">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed-dim flex items-center justify-center text-on-secondary-fixed font-headline-sm text-headline-sm font-extrabold shadow-sm">
+              RYC
+            </div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wide">
+              Social Impact
+            </span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-secondary transition-colors">
+              Rotaract Youth Club
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Community outreach, civic campaigns, quarterly blood drives, environmental sustainability, and youth leadership.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Blood Donation Camps</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Tree Plantation</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">person</span>President</span>
+<span class="font-semibold text-on-surface">Karthik Narayanan ('26)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span>Next Sync</span>
+<span class="font-semibold text-on-surface">Sun, 11:00 AM • Plaza B</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span class="font-bold text-on-surface">340</span> members
+          </div>
+<div class="flex items-center gap-2">
+<button class="join-btn px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm transition-all" data-name="Rotaract Youth Club">
+              Join Club
+            </button>
+<a aria-label="Portal Link" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="society-card group flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="entrepreneurship">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-container text-on-tertiary flex items-center justify-center font-headline-sm text-headline-sm font-extrabold shadow-sm">
+              E-C
+            </div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold uppercase tracking-wide">
+              Business &amp; Ventures
+            </span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-tertiary transition-colors">
+              E-Cell: Entrepreneurship Cell
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Fueling student founders with seed funding opportunities, pitch deck coaching, venture capitalist mixers, and incubation.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Startup Incubation</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Seed Angel Pitch</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">person</span>President</span>
+<span class="font-semibold text-on-surface">Maya Campbell ('25)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span>Next Sync</span>
+<span class="font-semibold text-on-surface">Thu, 6:00 PM • Hub Inc</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-tertiary text-[18px]">group</span>
+<span class="font-bold text-on-surface">275</span> members
+          </div>
+<div class="flex items-center gap-2">
+<button class="join-btn px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm transition-all" data-name="E-Cell: Entrepreneurship Cell">
+              Join Club
+            </button>
+<a aria-label="Portal Link" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-3xl p-space-lg md:p-space-xl shadow-md overflow-hidden relative">
+<div class="relative z-10">
+<div class="max-w-3xl mb-space-lg">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[15px]">add_circle</span>
+            Charter a New Initiative
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 tracking-tight">
+            Start Your Own Club / Society
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-1">
+            Have a unique passion not yet represented on campus? Follow our 4-step accreditation process to access university funding, faculty guidance, and room bookings.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm relative">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold mb-3">
+              1
+            </div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold mb-1">Assemble Founders</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gather at least 15 founding student signatures and assign primary officer roles.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm relative">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold mb-3">
+              2
+            </div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold mb-1">Faculty Advisor</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Secure written endorsement from a full-time academic or athletic faculty mentor.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm relative">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold mb-3">
+              3
+            </div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold mb-1">Submit Charter</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Draft your constitution, mission, safety protocol, and expected fiscal budget.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm relative">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold mb-3">
+              4
+            </div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold mb-1">Council Hearing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Present at the Student Affairs review board for official recognition and grant funds.</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">description</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-bold">Standard Constitution &amp; Proposal Template</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Official .PDF &amp; .DOCX guide updated for Academic Year 2024-2025</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:ml-auto w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-md py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-bold hover:bg-surface-variant transition-colors flex items-center justify-center gap-2" id="download-proposal-btn">
+<span class="material-symbols-outlined text-[18px]">download</span>
+              Download Proposal Kit
+            </button>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-xl bg-gradient-to-r from-primary to-tertiary text-on-primary font-label-md text-label-md font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" id="apply-charter-btn">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+              Submit Application
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-4" id="join-modal">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg max-w-md w-full shadow-2xl relative">
+<button class="absolute top-4 right-4 text-outline hover:text-on-surface p-1 rounded-lg" id="close-modal-btn">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[28px]">domain_add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Join Chapter</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md" id="modal-society-title">
+        Submit your student profile credentials to join this student society.
+      </p>
+<form class="space-y-space-sm" id="join-form" onsubmit="event.preventDefault();">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Student ID / Roll No</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm border-none focus:ring-2 focus:ring-primary" readonly="" type="text" value="STU-2026-9921"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Statement of Interest</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm border-none focus:ring-2 focus:ring-primary" placeholder="Describe your background and what you'd like to contribute..." rows="3"></textarea>
+</div>
+<div class="pt-2 flex gap-2">
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-colors" id="confirm-join-btn" type="submit">
+            Confirm Registration
+          </button>
+</div>
+</form>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-2 font-body-md text-body-md transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none z-50" id="toast-message">
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+<span id="toast-text">Operation completed</span>
+</div>
+<script>
+    (function() {
+      const searchInput = document.getElementById('club-search-input');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.society-card');
+      const modal = document.getElementById('join-modal');
+      const closeModalBtn = document.getElementById('close-modal-btn');
+      const modalSocietyTitle = document.getElementById('modal-society-title');
+      const toast = document.getElementById('toast-message');
+      const toastText = document.getElementById('toast-text');
+
+      function showToast(msg) {
+        toastText.textContent = msg;
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        }, 3200);
+      }
+
+      function filterClubs() {
+        const query = searchInput.value.toLowerCase().trim();
+        const activeBtn = document.querySelector('.filter-btn.active-filter');
+        const activeCat = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+
+        cards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          const cardText = card.textContent.toLowerCase();
+          const matchesQuery = cardText.includes(query);
+          const matchesCat = (activeCat === 'all' || cardCat === activeCat);
+
+          if (matchesQuery && matchesCat) {
+            card.classList.remove('hidden');
+            card.classList.add('flex');
+          } else {
+            card.classList.add('hidden');
+            card.classList.remove('flex');
+          }
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active-filter', 'bg-primary', 'text-on-primary', 'shadow-sm');
+            b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          btn.classList.add('active-filter', 'bg-primary', 'text-on-primary', 'shadow-sm');
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          filterClubs();
+        });
+      });
+
+      searchInput.addEventListener('input', filterClubs);
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+          searchInput.value = '';
+          filterClubs();
+        }
+      });
+
+      document.querySelectorAll('.join-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const clubName = btn.getAttribute('data-name');
+          modalSocietyTitle.textContent = `Submit your interest to register for: ${clubName}`;
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      });
+
+      document.getElementById('featured-join-btn').addEventListener('click', () => {
+        modalSocietyTitle.textContent = "Submit registration for Google Developer Student Club (GDSC) - Campus Chapter";
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      });
+
+      closeModalBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      });
+
+      document.getElementById('confirm-join-btn').addEventListener('click', () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        showToast("Application submitted to Chapter Council!");
+      });
+
+      document.getElementById('download-proposal-btn').addEventListener('click', () => {
+        showToast("Charter Kit & Templates downloaded (.ZIP)");
+      });
+
+      document.getElementById('apply-charter-btn').addEventListener('click', () => {
+        showToast("Redirecting to Student Council Portal...");
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-md"><img alt="CampusConnect Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XiEaCBvYJvOjsHwpe62CgAbUUboI550HiyGVyoT1FBN3I42S_qZ47ZwPQPMP2TfNPIvNdGfuP-3ggHVcp0Smig8qZdu_H2qR8Q_TzFzVz4joE8shtptTvcizoeWIbFNKNc70IQxTbkcVPkgNX9oBWZuNM34_7zCmsK01KF_7I5p5S8v0pMD1awWvWJsirLg8eEMhZPNGnui3VmtUo1Fih_wK8vAeHPWZz39_bqNLzNii8hIPkbQbCr53MU"/><span class="font-headline-sm text-headline-sm text-on-surface">CampusConnect</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">Empowering student life and collegiate engagement across campus through seamless event discovery, student-led organizations, and academic unity.</p><div class="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Campus Network" class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">hub</span></a><a aria-label="Community Feed" class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">forum</span></a><a aria-label="University Directory" class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">school</span></a></div></div><div><h3 class="font-title-md text-title-md text-on-surface mb-space-md">Quick Links</h3><ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="events" href="#">Upcoming Hackathons</a></li><li><a class="hover:text-primary transition-colors" data-path="events" href="#">Cultural Fest 2025</a></li><li><a class="hover:text-primary transition-colors" data-path="clubs-societies" href="#">Club Directory</a></li><li><a class="hover:text-primary transition-colors" data-path="campus-map" href="#">Campus Map</a></li></ul></div><div><h3 class="font-title-md text-title-md text-on-surface mb-space-md">Student Services</h3><ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="about" href="#">Event Guidelines</a></li><li><a class="hover:text-primary transition-colors" data-path="room-booking" href="#">Room Booking</a></li><li><a class="hover:text-primary transition-colors" data-path="student-council" href="#">Student Council</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="#">Helpdesk &amp; FAQs</a></li></ul></div><div><h3 class="font-title-md text-title-md text-on-surface mb-space-md">Campus Emergency &amp; Contact</h3><div class="space-y-space-sm font-body-md text-body-md text-on-surface-variant mb-space-md"><div><span class="block font-label-md text-label-md text-on-surface font-semibold">Security Hotline:</span><span>(555) 019-2834 (24/7)</span></div><div><span class="block font-label-md text-label-md text-on-surface font-semibold">Dean of Student Affairs:</span><span>South Tower, Hall B • ext. 4410</span></div><div><span class="block font-label-md text-label-md text-on-surface font-semibold">Email:</span><a class="hover:text-primary transition-colors" href="mailto:connect@campusconnect.edu">connect@campusconnect.edu</a></div></div><div><form class="flex items-center gap-space-xs" onsubmit="event.preventDefault()"><input class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Student email" type="email"/><button class="h-10 px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-colors" type="submit">Join</button></form></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 CampusConnect Portal. Affiliated with University Division of Student Affairs.</p><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="about" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="about" href="#">Student Code of Conduct</a><a class="hover:text-primary transition-colors" data-path="contact" href="#">Accessibility</a></div></div></div></footer></body></html>

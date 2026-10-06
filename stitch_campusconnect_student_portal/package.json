@@ -1,0 +1,16 @@
+{
+  "name": "campusconnect-fullstack",
+  "version": "1.0.0",
+  "description": "CampusConnect Collegiate Student Portal - React Vite & Node.js Express Full-Stack Application",
+  "scripts": {
+    "dev": "node run-all.js",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": ["react", "vite", "nodejs", "express", "campusconnect", "student-portal"],
+  "author": "CampusConnect Team",
+  "license": "MIT"
+}
