@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import confetti from "canvas-confetti";
 import { registerForEvent } from "../services/api";
 
@@ -10,6 +10,17 @@ export default function RegisterModal({ event, isOpen, onClose, onRegistered }) 
   const [loading, setLoading] = useState(false);
   const [ticket, setTicket] = useState(null);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    if (event) {
+      setSelectedTrack(event?.tracks?.[0]?.name || "General Innovation Track");
+      setTeamName("");
+      setParticipationType("solo");
+      setDietary("None");
+      setTicket(null);
+      setError("");
+    }
+  }, [event?.id, isOpen]);
 
   if (!isOpen || !event) return null;
 
@@ -50,7 +61,12 @@ export default function RegisterModal({ event, isOpen, onClose, onRegistered }) 
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/50 backdrop-blur-sm animate-in fade-in duration-200">
+    <div
+      onClick={(e) => {
+        if (e.target === e.currentTarget) handleClose();
+      }}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/50 backdrop-blur-sm animate-in fade-in duration-200"
+    >
       <div className="bg-surface-container-lowest rounded-2xl w-full max-w-lg p-6 shadow-2xl border border-outline-variant/30 max-h-[90vh] overflow-y-auto">
         {!ticket ? (
           <>

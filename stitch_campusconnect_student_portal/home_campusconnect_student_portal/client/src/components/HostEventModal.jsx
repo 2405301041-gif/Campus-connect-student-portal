@@ -39,7 +39,12 @@ export default function HostEventModal({ isOpen, onClose, onEventCreated }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/50 backdrop-blur-sm animate-in fade-in duration-200">
+    <div
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/50 backdrop-blur-sm animate-in fade-in duration-200"
+    >
       <div className="bg-surface-container-lowest rounded-2xl w-full max-w-xl p-6 shadow-2xl border border-outline-variant/30 max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between pb-4 border-b border-surface-container-high">
           <div className="flex items-center gap-2">

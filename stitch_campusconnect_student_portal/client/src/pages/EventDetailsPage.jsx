@@ -33,6 +33,13 @@ export default function EventDetailsPage({
     setTimeout(() => setToastMessage(""), 2500);
   };
 
+  const handleBookmarkToggle = () => {
+    if (onToggleBookmark && event) {
+      onToggleBookmark(event.id);
+      setEvent((prev) => prev ? { ...prev, isBookmarked: !prev.isBookmarked } : prev);
+    }
+  };
+
   if (loading) {
     return (
       <div className="max-w-[1440px] mx-auto px-4 py-20 text-center">
@@ -106,7 +113,7 @@ export default function EventDetailsPage({
             {/* Utility Micro-Action Buttons */}
             <div className="flex items-center gap-2 relative">
               <button
-                onClick={() => onToggleBookmark && onToggleBookmark(event.id)}
+                onClick={handleBookmarkToggle}
                 aria-label="Bookmark"
                 className="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white transition-colors"
                 title="Save to bookmarks"
@@ -247,7 +254,7 @@ export default function EventDetailsPage({
           <div className="w-full md:w-96 h-2 rounded-full bg-surface-container-high overflow-hidden">
             <div
               className="h-full bg-gradient-to-r from-primary to-secondary-container"
-              style={{ width: `${(event.registeredCount / event.spotsTotal) * 100}%` }}
+              style={{ width: `${event.spotsTotal ? Math.min(100, (event.registeredCount / event.spotsTotal) * 100) : 0}%` }}
             ></div>
           </div>
         </div>

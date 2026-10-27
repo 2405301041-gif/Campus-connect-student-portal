@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { reserveRoom } from "../services/api";
+import { reserveRoom, cancelRoomReservation, unregisterFromEvent } from "../services/api";
 
 export default function DashboardPage({
   studentData = {},
@@ -38,6 +38,26 @@ export default function DashboardPage({
       alert(err.message || "Failed to reserve room");
     } finally {
       setReserveLoading(false);
+    }
+  };
+
+  const handleCancelReservation = async (resId) => {
+    if (!window.confirm("Are you sure you want to cancel this space reservation?")) return;
+    try {
+      await cancelRoomReservation(resId);
+      if (onRefreshStudent) onRefreshStudent();
+    } catch (err) {
+      alert(err.message || "Failed to cancel reservation");
+    }
+  };
+
+  const handleUnregisterPass = async (eventId) => {
+    if (!window.confirm("Are you sure you want to cancel this event pass?")) return;
+    try {
+      await unregisterFromEvent(eventId);
+      if (onRefreshStudent) onRefreshStudent();
+    } catch (err) {
+      alert(err.message || "Failed to cancel event pass");
     }
   };
 
@@ -286,15 +306,24 @@ export default function DashboardPage({
                       <p className="text-xs text-on-surface-variant mt-0.5 truncate">{ev.venue}</p>
                     </div>
 
-                    <div className="pt-2 border-t border-outline-variant/30 flex items-center justify-between">
-                      <button
-                        onClick={() => onSelectEventToRegister(ev)}
-                        className="text-xs font-bold text-primary hover:underline flex items-center gap-1"
-                      >
-                        <span className="material-symbols-outlined text-[16px]">qr_code</span>
-                        <span>View Ticket Pass</span>
-                      </button>
-                      <Link to={`/events/${ev.id}`} className="text-xs text-on-surface-variant hover:text-on-surface">
+                    <div className="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-xs">
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => onSelectEventToRegister(ev)}
+                          className="font-bold text-primary hover:underline flex items-center gap-1"
+                        >
+                          <span className="material-symbols-outlined text-[16px]">qr_code</span>
+                          <span>Ticket Pass</span>
+                        </button>
+                        <button
+                          onClick={() => handleUnregisterPass(ev.id)}
+                          className="text-error hover:underline text-[11px]"
+                          title="Cancel Registration"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                      <Link to={`/events/${ev.id}`} className="text-on-surface-variant hover:text-on-surface">
                         Details →
                       </Link>
                     </div>
@@ -404,9 +433,18 @@ export default function DashboardPage({
               </span>
               {reservations.map((r) => (
                 <div key={r.id} className="p-2.5 rounded-xl bg-surface-container-low text-xs space-y-1">
-                  <div className="flex justify-between font-bold text-on-surface">
+                  <div className="flex justify-between items-center font-bold text-on-surface">
                     <span>{r.room}</span>
-                    <span className="font-mono text-primary text-[10px]">{r.code}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono text-primary text-[10px]">{r.code}</span>
+                      <button
+                        onClick={() => handleCancelReservation(r.id)}
+                        className="text-error hover:underline text-[10px] font-semibold"
+                        title="Cancel reservation"
+                      >
+                        Cancel
+                      </button>
+                    </div>
                   </div>
                   <p className="text-[11px] text-on-surface-variant">{r.building} • {r.date}</p>
                 </div>

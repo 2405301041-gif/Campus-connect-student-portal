@@ -118,8 +118,26 @@ export default function AnnouncementsPage({ announcements = [] }) {
       </section>
 
       {/* Circulars List */}
-      <div className="space-y-4">
-        {filteredAnnouncements.map((notice) => {
+      {filteredAnnouncements.length === 0 ? (
+        <div className="bg-surface-container-lowest rounded-2xl p-12 text-center border border-outline-variant/30 space-y-3">
+          <span className="material-symbols-outlined text-[48px] text-outline">search_off</span>
+          <h3 className="font-headline font-bold text-lg text-on-surface">No circulars or notices found</h3>
+          <p className="text-xs text-on-surface-variant max-w-sm mx-auto">
+            Try adjusting your search terms or selecting 'All Divisions'.
+          </p>
+          <button
+            onClick={() => {
+              setSelectedDivision("All Divisions");
+              setSearchTerm("");
+            }}
+            className="px-4 py-2 rounded-xl bg-primary text-white font-semibold text-xs"
+          >
+            Reset Filters
+          </button>
+        </div>
+      ) : (
+        <div className="space-y-4">
+          {filteredAnnouncements.map((notice) => {
           const isExpanded = expandedId === notice.id;
           const isUrgent = notice.urgency === "urgent";
 
@@ -204,7 +222,8 @@ export default function AnnouncementsPage({ announcements = [] }) {
             </div>
           );
         })}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

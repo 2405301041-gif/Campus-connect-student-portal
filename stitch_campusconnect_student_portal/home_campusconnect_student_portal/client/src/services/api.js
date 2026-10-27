@@ -1,4 +1,4 @@
-const API_BASE = "/api";
+const API_BASE = import.meta.env.VITE_API_URL || "/api";
 
 export async function fetchPulse() {
   const res = await fetch(`${API_BASE}/pulse`);
@@ -41,6 +41,14 @@ export async function registerForEvent(id, data = {}) {
     body: JSON.stringify(data),
   });
   if (!res.ok) throw new Error("Failed to register for event");
+  return res.json();
+}
+
+export async function unregisterFromEvent(id) {
+  const res = await fetch(`${API_BASE}/events/${id}/unregister`, {
+    method: "POST",
+  });
+  if (!res.ok) throw new Error("Failed to cancel event pass");
   return res.json();
 }
 
@@ -115,6 +123,14 @@ export async function reserveRoom(data) {
     body: JSON.stringify(data),
   });
   if (!res.ok) throw new Error("Failed to reserve room");
+  return res.json();
+}
+
+export async function cancelRoomReservation(id) {
+  const res = await fetch(`${API_BASE}/student/reserve-room/${id}`, {
+    method: "DELETE",
+  });
+  if (!res.ok) throw new Error("Failed to cancel room reservation");
   return res.json();
 }
 

@@ -167,15 +167,20 @@ export default function Navbar({ onOpenHostModal, onOpenSearch, studentData, onR
           >
             <div className="relative flex-shrink-0">
               <img
-                alt="Maya Lin"
+                alt={studentData?.name || "Maya Lin"}
                 className="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvuhxhYgH1Cs8y_-_7AIqllQc-K0t-4KZww_BOtF_C3MHUprW-hxRzgQoC3tw6O03rWFe_VoPXw4hu7SBoQ7xtYIAB6AMNdqQwVX-Mqzgvlfm_QyVW3ywCy52h75lFvw58jMCv6sDaHBqcnaFxX01uGGU-0TLFNqsSXtaTGXjulZVFHkoR0m2tBwVOmDyUWf51HU-c-l6tM03iXx4PEVop_PMyX-oVPnh9QS4t9Wmx_EwBSxAELuVyGA"
+                src={
+                  studentData?.avatarUrl ||
+                  "https://lh3.googleusercontent.com/aida-public/AB6AXuBvuhxhYgH1Cs8y_-_7AIqllQc-K0t-4KZww_BOtF_C3MHUprW-hxRzgQoC3tw6O03rWFe_VoPXw4hu7SBoQ7xtYIAB6AMNdqQwVX-Mqzgvlfm_QyVW3ywCy52h75lFvw58jMCv6sDaHBqcnaFxX01uGGU-0TLFNqsSXtaTGXjulZVFHkoR0m2tBwVOmDyUWf51HU-c-l6tM03iXx4PEVop_PMyX-oVPnh9QS4t9Wmx_EwBSxAELuVyGA"
+                }
               />
               <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-white"></span>
             </div>
             <div className="hidden lg:flex flex-col text-left leading-tight">
-              <span className="text-xs font-bold text-on-surface">Maya Lin</span>
-              <span className="text-[10px] text-on-surface-variant font-medium">CS '26 • Honors</span>
+              <span className="text-xs font-bold text-on-surface">{studentData?.name || "Maya Lin"}</span>
+              <span className="text-[10px] text-on-surface-variant font-medium">
+                {studentData?.cohort ? `${studentData.cohort.replace("Class of 20", "'")} • Honors` : "CS '26 • Honors"}
+              </span>
             </div>
           </Link>
 

@@ -360,7 +360,7 @@ export default function HomePage({
                   <div className="w-full h-2 rounded-full bg-white/20 overflow-hidden">
                     <div
                       className="h-full bg-gradient-to-r from-secondary-container to-primary"
-                      style={{ width: `${(featuredEvent.registeredCount / featuredEvent.spotsTotal) * 100}%` }}
+                      style={{ width: `${featuredEvent.spotsTotal ? Math.min(100, (featuredEvent.registeredCount / featuredEvent.spotsTotal) * 100) : 0}%` }}
                     ></div>
                   </div>
                 </div>

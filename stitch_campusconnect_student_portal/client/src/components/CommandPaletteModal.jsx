@@ -6,14 +6,13 @@ export default function CommandPaletteModal({ isOpen, onClose, events = [], club
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (!isOpen) {
+      setQuery("");
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
     const handleKeyDown = (e) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-        e.preventDefault();
-        if (isOpen) onClose();
-        else {
-          // Trigger handled in parent or here
-        }
-      }
       if (e.key === "Escape" && isOpen) {
         onClose();
       }
@@ -44,7 +43,12 @@ export default function CommandPaletteModal({ isOpen, onClose, events = [], club
   ).slice(0, 4);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4 bg-on-surface/50 backdrop-blur-sm animate-in fade-in duration-150">
+    <div
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+      className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4 bg-on-surface/50 backdrop-blur-sm animate-in fade-in duration-150"
+    >
       <div className="bg-surface-container-lowest rounded-2xl w-full max-w-2xl shadow-2xl border border-outline-variant/30 overflow-hidden">
         {/* Search header */}
         <div className="flex items-center px-4 py-3 border-b border-surface-container-high gap-3">

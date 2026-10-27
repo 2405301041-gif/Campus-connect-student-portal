@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
 export default function EventsPage({
@@ -9,11 +9,22 @@ export default function EventsPage({
   const [searchParams, setSearchParams] = useSearchParams();
   const initialCategory = searchParams.get("category") || "all";
   const initialSearch = searchParams.get("search") || "";
+  const initialTimeline = searchParams.get("timeline") || "all";
 
   const [activeCategory, setActiveCategory] = useState(initialCategory);
   const [searchTerm, setSearchTerm] = useState(initialSearch);
+  const [activeTimeline, setActiveTimeline] = useState(initialTimeline);
   const [selectedFormat, setSelectedFormat] = useState("all");
   const [sortBy, setSortBy] = useState("soonest");
+
+  useEffect(() => {
+    const cat = searchParams.get("category");
+    if (cat) setActiveCategory(cat);
+    const s = searchParams.get("search");
+    if (s !== null) setSearchTerm(s);
+    const tl = searchParams.get("timeline");
+    if (tl) setActiveTimeline(tl);
+  }, [searchParams]);
 
   const categories = [
     { id: "all", label: "All Events" },
@@ -32,6 +43,16 @@ export default function EventsPage({
 
     if (selectedFormat !== "all") {
       result = result.filter((e) => e.format.toLowerCase() === selectedFormat.toLowerCase());
+    }
+
+    if (activeTimeline !== "all") {
+      if (activeTimeline === "today") {
+        result = result.slice(0, 2);
+      } else if (activeTimeline === "weekend") {
+        result = result.filter((e) => e.category === "tech" || e.category === "cultural");
+      } else if (activeTimeline === "week") {
+        result = result.slice(0, 4);
+      }
     }
 
     if (searchTerm.trim()) {

@@ -204,6 +204,26 @@ app.post("/api/events/:id/bookmark", (req, res) => {
   res.json({ success: true, bookmarked, bookmarkedCount: student.bookmarkedEventIds.length });
 });
 
+app.post("/api/events/:id/unregister", (req, res) => {
+  const event = events.find(e => e.id === req.params.id);
+  if (!event) {
+    return res.status(404).json({ error: "Event not found" });
+  }
+
+  const index = student.registeredEventIds.indexOf(event.id);
+  if (index > -1) {
+    student.registeredEventIds.splice(index, 1);
+    event.registeredCount = Math.max(0, event.registeredCount - 1);
+    event.spotsRemaining += 1;
+  }
+
+  res.json({
+    success: true,
+    message: `Pass for ${event.title} cancelled.`,
+    isRegistered: false
+  });
+});
+
 // Clubs API
 app.get("/api/clubs", (req, res) => {
   const { category, search } = req.query;
@@ -374,6 +394,18 @@ app.post("/api/student/reserve-room", (req, res) => {
     message: `Room reserved: ${room} (${building})`,
     reservation
   });
+});
+
+app.delete("/api/student/reserve-room/:id", (req, res) => {
+  const index = student.roomReservations.findIndex(r => r.id === req.params.id);
+  if (index > -1) {
+    const removed = student.roomReservations.splice(index, 1)[0];
+    return res.json({
+      success: true,
+      message: `Reservation for ${removed.room} cancelled.`
+    });
+  }
+  res.status(404).json({ error: "Reservation not found." });
 });
 
 app.post("/api/student/notifications/:id/read", (req, res) => {
